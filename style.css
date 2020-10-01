@@ -185,7 +185,7 @@ main .right article img {
 
 @media only screen and (max-width: 768px) {
   img {
-    height: 15rem;
+    height: 23rem;
   }
   body {
     font-size: 12rem;
