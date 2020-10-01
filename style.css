@@ -183,4 +183,7 @@ main .right article img {
   img {
     height: 12rem;
   }
+  @viewport {
+    zoom: 0.5;
+  }
 }
