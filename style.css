@@ -1,3 +1,17 @@
+html, body, p {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e2e8f0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #EFF0F1;
+  min-width: 1050px;
+}
+
 header {
   background-image: url("img/header_background.png");
   background-repeat: no-repeat;
@@ -5,16 +19,30 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
 }
 
 #youtube {
-  width: 48rem;
-  height: 35rem;
-  border: 1px solid red;
+  width: 50%;
+  height: 50vh;
+  margin: auto;
 }
 
 main {
   background-color: #EFF0F1;
+  display: flex;
+  padding: 3rem;
+}
+
+main article {
+  /* flex flex-col pb-10 align-center */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+  align-items: c;
 }
 
 main article h1 {
@@ -24,6 +52,7 @@ main article h1 {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.5px;
+  margin: 0;
 }
 
 main article p {
@@ -31,7 +60,14 @@ main article p {
   font-family: MontserratExtraLight;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+  padding-top: 2.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Montserrat-Regular */
@@ -48,17 +84,105 @@ main article p {
   src: url("/fonts/Montserrat-ExtraLight.ttf");
 }
 
-.lined-header {}
-
-.line {
-  width: 112px;
-  height: 47px;
-  border-bottom: 1px solid black;
+.left {
+  /* flex-1 my-6 pr-10 */
+  border-right: 1px solid;
+  flex: 1;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-right: 2.5rem;
 }
 
-.circle {
-  width: 100px;
-  height: 100px;
-  background: red;
-  border-radius: 50%
+.right {
+  margin-top: 135px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-left: 2.5rem;
+  flex: 1;
+}
+
+.lined-header {
+  position: relative;
+  display: flex;
+}
+
+.unit-left {
+  position: absolute;
+  top: 0;
+}
+
+.unit-right {
+  position: absolute;
+  top: 0;
+}
+
+.left .line {
+  width: 240px;
+  height: 10px;
+  border-bottom: 2px solid #001e2e;
+  right: -140px
+}
+
+.left .circle {
+  width: 38px;
+  height: 38px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #001e2e;
+  top: -9px;
+  right: -161px;
+}
+
+.left .year {
+  top: -4px;
+  right: -220px;
+}
+
+.left .description {
+  padding-right: 100px;
+  padding-left: 5rem;
+}
+
+.right .description {
+  padding-right: 100px;
+  padding-left: 5rem;
+}
+
+main .left article img {
+  margin-right: 100px;
+}
+
+main .right article img {
+  margin-left: 5rem;
+}
+
+.right .line {
+  width: 110px;
+  height: 10px;
+  border-bottom: 2px solid #001e2e;
+  left: -150px
+}
+
+.right .circle {
+  width: 38px;
+  height: 38px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #001e2e;
+  top: -9px;
+  left: -190px;
+}
+
+.right .year {
+  top: -4px;
+  left: -246px;
+}
+
+@media only screen and (max-width: 600px) {
+  iframe {
+    border: 2px solid red;
+  }
+  .left .line {
+    width: 140px;
+  }
 }
