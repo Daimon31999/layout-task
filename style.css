@@ -26,15 +26,16 @@ header {
 }
 
 #youtube {
-  width: 50%;
-  height: 50vh;
+  width: 80%;
+  height: 80vh;
   margin: auto;
+  border: none;
 }
 
 main {
   background-color: #EFF0F1;
   display: flex;
-  padding: 3rem;
+  padding: 6rem 3rem;
 }
 
 main article {
@@ -67,7 +68,7 @@ main article p {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 13rem;
 }
 
 /* Montserrat-Regular */
@@ -94,7 +95,7 @@ img {
 }
 
 .right {
-  margin-top: 135px;
+  margin-top: 12rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding-left: 2.5rem;
@@ -117,7 +118,7 @@ img {
 }
 
 .left .line {
-  width: 240px;
+  width: 10rem;
   height: 10px;
   border-bottom: 2px solid #001e2e;
   right: -140px
@@ -179,10 +180,7 @@ main .right article img {
 }
 
 @media only screen and (max-width: 600px) {
-  iframe {
-    border: 2px solid red;
-  }
-  .left .line {
-    width: 140px;
+  img {
+    height: 12rem;
   }
 }
