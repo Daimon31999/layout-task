@@ -184,8 +184,16 @@ main .right article img {
 }
 
 @media only screen and (max-width: 768px) {
-  img {
-    height: 23rem;
+  header {
+    height: 200vh;
+  }
+  #youtube {
+    width: 100%;
+    height: 200vh;
+  }
+  main .left article img {
+    height: 40rem;
+    margin-right: 0;
   }
   body {
     font-size: 12rem;
@@ -193,27 +201,45 @@ main .right article img {
   main .right {
     display: none;
   }
+  .left .description {
+    padding: 0;
+  }
+  .left .line {
+    right: -42px;
+    height: 0;
+    width: 6rem;
+  }
   .left .circle {
-    /* background: red !important; */
+    width: 38px;
+    height: 38px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #001e2e;
+    top: -17px;
+    right: 30px;
   }
   .left .year {
-    top: -17px;
-    right: -284px;
+    top: -28px;
+    right: 90px;
+    font-size: 3rem;
   }
   .hidden {
     display: flex;
   }
   main {
-    padding: 6rem 9rem 6rem 2rem;
+    padding: 6rem 2rem 6rem 2rem;
   }
   main article h1 {
     line-height: 1.3;
-    font-size: 3rem;
+    font-size: 6rem;
   }
   main article p {
-    font-size: 2rem;
+    font-size: 4rem;
   }
   main .left article:not(:first-child) {
     margin-top: 10rem;
+  }
+  .lined-header {
+    padding-top: 4rem;
   }
 }
