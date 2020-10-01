@@ -210,18 +210,19 @@ main .right article img {
     width: 6rem;
   }
   .left .circle {
-    width: 38px;
-    height: 38px;
+    width: 6rem;
+    height: 6rem;
+    height: 6rem;
     background-color: white;
     border-radius: 50%;
     border: 2px solid #001e2e;
-    top: -17px;
+    top: -45px;
     right: 30px;
   }
   .left .year {
-    top: -28px;
-    right: 90px;
-    font-size: 3rem;
+    top: -44px;
+    right: 160px;
+    font-size: 5rem;
   }
   .hidden {
     display: flex;
