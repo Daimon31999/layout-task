@@ -203,7 +203,7 @@ main .right article img {
     margin-right: 0;
     width: 80vw;
     max-width: none;
-    margin-left: -20px;
+    margin-left: 0px;
     margin-bottom: 4rem;
   }
   body {
@@ -214,12 +214,14 @@ main .right article img {
   }
   main .left {
     padding-right: 0;
+    margin-right: 0;
+    margin-left: 0.6rem;
   }
   .left .description {
     padding: 0;
   }
   .left .line {
-    right: 0;
+    right: -20px;
     height: 0;
     width: 2rem;
   }
@@ -231,11 +233,11 @@ main .right article img {
     border-radius: 50%;
     border: 2px solid #001e2e;
     top: -18px;
-    right: 30px;
+    right: 0px;
   }
   .left .year {
     top: -18px;
-    right: 80px;
+    right: 44px;
     font-size: 1.7rem;
   }
   .hidden {
