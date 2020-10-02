@@ -221,9 +221,9 @@ main .right article img {
     padding: 0;
   }
   .left .line {
-    right: -67px;
+    right: -8vw;
     height: 0;
-    width: 5rem;
+    width: 9vw;
   }
   .left .circle {
     width: 2rem;
@@ -263,24 +263,5 @@ main .right article img {
     /* margin-top: 3rem; */
     padding-top: 2rem;
     max-width: 80vw;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .left .line {
-    right: -32px;
-    width: 2rem;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .left .line {
-    right: -26px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .left .line {
-    right: -22px;
   }
 }
