@@ -203,6 +203,8 @@ main .right article img {
     margin-right: 0;
     width: 80vw;
     max-width: none;
+    margin-left: -20px;
+    margin-bottom: 4rem;
   }
   body {
     font-size: 12rem;
