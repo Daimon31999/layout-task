@@ -1,4 +1,5 @@
 html, body, p {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
@@ -19,7 +20,11 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
@@ -34,21 +39,30 @@ header {
 
 main {
   background-color: #EFF0F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 6rem 3rem;
 }
 
 main article {
   /* flex flex-col pb-10 align-center */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 2.5rem;
+  -webkit-box-align: c;
+  -ms-flex-align: c;
   align-items: c;
 }
 
 main article h1 {
   color: #001e2e;
-  font-family: MontserratRegular;
+  font-family: 'Montserrat';
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
@@ -58,9 +72,9 @@ main article h1 {
 
 main article p {
   color: #001e2e;
-  font-family: MontserratExtraLight;
+  font-family: 'Montserrat';
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.5;
   margin-bottom: 4rem;
   padding-top: 2.5rem;
@@ -71,23 +85,10 @@ img {
   height: 13rem;
 }
 
-/* Montserrat-Regular */
-
-@font-face {
-  font-family: MontserratRegular;
-  src: url("/fonts/Montserrat-Regular.ttf");
-}
-
-/* Montserrat-Extra-Light */
-
-@font-face {
-  font-family: MontserratExtraLight;
-  src: url("/fonts/Montserrat-ExtraLight.ttf");
-}
-
 .left {
-  /* flex-1 my-6 pr-10 */
   border-right: 1px solid;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -99,11 +100,15 @@ img {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding-left: 2.5rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
 .lined-header {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -225,6 +230,8 @@ main .right article img {
     font-size: 5rem;
   }
   .hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   main {
